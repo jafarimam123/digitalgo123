@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kirim Karya Kamu — Digital Go</title>
+<meta name="description" content="Kirim foto hasil mewarnai anakmu untuk dipajang di Galeri Karya Anak Digital Go.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sky-decor">
+  <div class="sun"></div>
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="bush"></div>
+</div>
+
+<div class="wrap">
+  <span class="badge">DIGITAL GO</span>
+
+  <div class="hero">
+    <h1 class="bubble-title">
+      <span class="l1">KI</span><span class="l2">RIM</span>
+      <br>
+      <span class="l3">KAR</span><span class="l5">YA</span> <span class="l6">KAMU</span>
+    </h1>
+    <span class="ribbon">Yuk pajang hasil mewarnai anakmu!</span>
+
+    <div class="steps-mini">
+      <div class="step-chip"><span class="num">1</span> Foto hasil karya</div>
+      <div class="step-chip"><span class="num">2</span> Isi form ini</div>
+      <div class="step-chip"><span class="num">3</span> Tunggu direview</div>
+    </div>
+  </div>
+
+  <!--
+    Form ini pakai Netlify Forms (data-netlify="true").
+    Submission akan muncul di dashboard Netlify (tab Forms) dan
+    kamu bisa dapat notifikasi email dari sana — lihat README.md
+    untuk cara mengaktifkan notifikasi email di dashboard Netlify.
+  -->
+  <form
+    name="karya-anak"
+    method="POST"
+    action="/thanks.html"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    enctype="multipart/form-data"
+    class="form-card"
+  >
+    <input type="hidden" name="form-name" value="karya-anak">
+    <p style="display:none;">
+      <label>Jangan diisi: <input name="bot-field"></label>
+    </p>
+
+    <div class="field">
+      <label for="parentName">Nama Orang Tua / Anak</label>
+      <input type="text" id="parentName" name="parentName" placeholder="Contoh: Bunda Sari & Kayla" required>
+    </div>
+
+    <div class="field">
+      <label for="email">Email (opsional, untuk kami hubungi balik)</label>
+      <input type="email" id="email" name="email" placeholder="nama@email.com">
+    </div>
+
+    <div class="field">
+      <label for="series">Seri E-book yang Digunakan</label>
+      <select id="series" name="series" required>
+        <option value="">Pilih seri...</option>
+        <option value="Tas Sekolah">Seri Tas Sekolah</option>
+        <option value="Pemandangan Alam">Seri Pemandangan Alam</option>
+        <option value="Lainnya">Lainnya</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="photo">Foto Hasil Karya</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required>
+      <p class="hint">Format JPG/PNG, foto diambil dengan pencahayaan cukup supaya warnanya terlihat jelas.</p>
+    </div>
+
+    <button type="submit" class="btn green" style="width:100%; justify-content:center;">Kirim Karya 🎨</button>
+  </form>
+
+  <a class="back-link" href="index.html">← Kembali ke Galeri</a>
+
+  <div class="footer-pill">
+    <a href="https://www.instagram.com/digitalgo123.id/" target="_blank" rel="noopener">📷 Instagram @digitalgo123.id</a>
+    <a href="https://lynk.id/digitalgo123" target="_blank" rel="noopener">🛍️ lynk.id/digitalgo123</a>
+    <a href="mailto:digitalgo123.id@gmail.com">✉️ digitalgo123.id@gmail.com</a>
+  </div>
+  <p class="footer-brand">— DIGITAL GO —</p>
+</div>
+
+</body>
+</html>
