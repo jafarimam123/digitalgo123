@@ -10,11 +10,11 @@
   const seriesSection = document.getElementById("seriesSection");
 
   function seriesByCode(code) {
-    return (window.SERIES_ITEMS || []).find((s) => s.code === code);
+    return (SERIES_ITEMS || []).find((s) => s.code === code);
   }
 
   function renderBundles() {
-    const bundles = window.BUNDLE_ITEMS || [];
+    const bundles = BUNDLE_ITEMS || [];
     bundleGrid.innerHTML = bundles
       .map((b) => {
         const members = b.seriesCodes.map(seriesByCode).filter(Boolean);
@@ -59,7 +59,7 @@
   }
 
   function renderSeries(filterCat) {
-    const items = window.SERIES_ITEMS || [];
+    const items = SERIES_ITEMS || [];
     const filtered =
       !filterCat || filterCat === "Semua" ? items : items.filter((s) => s.category === filterCat);
 
