@@ -303,3 +303,22 @@ body{
   .bubble-title{font-size:2.2rem;}
   .badge{font-size:.9rem; padding:6px 14px;}
 }
+
+/* ---- Link in Bio ---- */
+.bio-wrap{max-width:440px; margin:0 auto; text-align:center;}
+.logo-wrap{
+  position:relative; width:112px; height:112px; margin:22px auto 14px;
+  border-radius:50%; overflow:hidden; border:3px solid var(--navy);
+  box-shadow:4px 4px 0 rgba(27,58,107,.35);
+}
+.logo-wrap img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
+.logo-ph{
+  width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+  font-family:'Baloo 2',sans-serif; font-weight:800; font-size:1.8rem; color:var(--navy);
+  background:linear-gradient(135deg,var(--sun),var(--pink));
+}
+.bio-name{font-family:'Baloo 2',sans-serif; font-weight:800; font-size:1.4rem; margin:4px 0 4px;}
+.bio-tagline{font-size:.95rem; font-weight:600; color:var(--navy); opacity:.85; margin-bottom:6px;}
+
+.link-list{display:flex; flex-direction:column; gap:14px; max-width:420px; margin:22px auto 10px;}
+.btn.full{width:100%; justify-content:center;}
