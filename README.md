@@ -44,14 +44,29 @@ Website statis (HTML/CSS/JS biasa, tanpa framework) untuk:
 ## Struktur File
 
 ```
-index.html          -> halaman galeri (menampilkan foto-foto)
-upload.html          -> halaman form upload karya baru
-thanks.html          -> halaman terima kasih setelah submit
-css/style.css        -> semua styling (warna, font, layout)
-js/gallery.js        -> logika tampil galeri + tombol "Muat Lebih Banyak"
-js/gallery-data.js   -> DAFTAR FOTO -- ini yang kamu edit tiap ada foto baru
-images/gallery/      -> folder tempat semua file foto yang sudah di-approve
+index.html           -> halaman galeri (menampilkan foto-foto)
+upload.html           -> halaman form upload karya baru
+thanks.html           -> halaman terima kasih setelah submit
+katalog.html           -> halaman katalog seri & bundle e-book
+css/style.css         -> semua styling (warna, font, layout)
+js/gallery.js         -> logika tampil galeri + tombol "Muat Lebih Banyak"
+js/gallery-data.js    -> DAFTAR FOTO -- ini yang kamu edit tiap ada foto baru
+js/catalog.js         -> logika tampil katalog (tab bundle/seri, filter kategori)
+js/catalog-data.js    -> DAFTAR SERI & BUNDLE -- ini yang kamu edit tiap ada seri/bundle baru
+images/gallery/       -> folder tempat semua file foto yang sudah di-approve
+images/catalog/       -> folder tempat cover tiap seri (belum ada, tinggal dibuat & diisi)
 ```
+
+## Halaman Katalog (`katalog.html`)
+
+- Menampilkan 2 tab: **Paket Bundle** (6 bundle, masing-masing 5 seri) dan **Semua Seri** (30 seri,
+  bisa difilter per kategori tema).
+- **Harga sengaja tidak ditampilkan.** Setiap kartu seri maupun bundle langsung jadi link ke
+  `https://lynk.id/digitalgo123` (tab baru).
+- Cover tiap seri diambil dari `images/catalog/seri-XXXX.jpg` (XXXX = kode 4 digit seri, contoh
+  `seri-0001.jpg`). Kalau file cover belum ada/belum diupload, otomatis tampil placeholder warna
+  sesuai kategori temanya (tidak error, tetap rapi) — jadi cover bisa diisi belakangan kapan saja.
+- Cara menambah seri atau bundle baru: ikuti petunjuk di komentar bagian atas `js/catalog-data.js`.
 
 ## Catatan
 
