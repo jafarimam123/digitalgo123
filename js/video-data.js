@@ -17,5 +17,8 @@
 */
 
 const VIDEO_ITEMS = [
-  // { url: "https://www.youtube.com/watch?v=GANTI_DENGAN_ID_VIDEO", title: "Judul video pertama" },
+   { url: "https://www.youtube.com/shorts/RxvX1gAbaeI", title: "DG V01 BRAND INTRO Kenalan dengan Digital Go: Ebook Mewarnai Anak 🌈" },
+   { url: "https://www.youtube.com/shorts/q6Xul9V5lUo", title: "DG V02 S07 BEFORE AFTER Kenalkan Si Kecil pada Landmark Dunia Lewat Warna 🖍️" },
+   { url: "https://www.youtube.com/shorts/igwjHVwfWdo", title: "Si Kecil Suka Pesawat? Yuk Mewarnai Bareng Digital Go ✈️" },
+   { url: "https://www.youtube.com/shorts/HCWrTQTS250", title: "🎁 Satu Bundle, 5 Seri Seru: Bundle Kenal Dunia Sekitar!" },
 ];
