@@ -48,9 +48,12 @@ index.html           -> halaman galeri (menampilkan foto-foto)
 upload.html           -> halaman form upload karya baru
 thanks.html           -> halaman terima kasih setelah submit
 katalog.html           -> halaman katalog seri & bundle e-book
+video.html            -> halaman galeri video YouTube
 css/style.css         -> semua styling (warna, font, layout)
 js/gallery.js         -> logika tampil galeri + tombol "Muat Lebih Banyak"
 js/gallery-data.js    -> DAFTAR FOTO -- ini yang kamu edit tiap ada foto baru
+js/video.js           -> logika tampil galeri video (klik thumbnail -> player YouTube)
+js/video-data.js      -> DAFTAR VIDEO -- edit tiap ada video baru di YouTube
 js/catalog.js         -> logika tampil katalog (tab bundle/seri, filter kategori)
 js/catalog-data.js    -> DAFTAR SERI & BUNDLE -- ini yang kamu edit tiap ada seri/bundle baru
 images/gallery/       -> folder tempat semua file foto yang sudah di-approve
