@@ -31,7 +31,8 @@
   }
 
   function renderNextBatch() {
-    const items = (window.VIDEO_ITEMS || []).filter((v) => getVideoId(v.url));
+    const all = typeof VIDEO_ITEMS !== "undefined" ? VIDEO_ITEMS : [];
+    const items = all.filter((v) => getVideoId(v.url));
     const next = items.slice(shown, shown + PAGE_SIZE);
 
     next.forEach((item) => {
