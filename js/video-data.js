@@ -22,5 +22,5 @@ const VIDEO_ITEMS = [
    { url: "https://www.youtube.com/shorts/igwjHVwfWdo", title: "Si Kecil Suka Pesawat? Yuk Mewarnai Bareng Digital Go ✈️" },
    { url: "https://www.youtube.com/shorts/HCWrTQTS250", title: "🎁 Satu Bundle, 5 Seri Seru: Bundle Kenal Dunia Sekitar!" },
    { url: "https://www.youtube.com/shorts/4sWXE5220Vo", title: "🚀 Yuk, Jelajahi Luar Angkasa dengan Warna!" },
-
+   { url: "https://www.youtube.com/shorts/x52gZjD1BUo", title: "🍎 Kenali Buah Sambil Mewarnai!" },
 ];
