@@ -1,4 +1,7 @@
-# Galeri Karya Anak — Digital Go
+# Galeri Karya Anak — Genca Digital
+
+> Brand: **Genca Digital** (Generasi Cahaya Digital) — sebelumnya Digital Go / digitalgo123.
+> Catatan: handle sosmed, URL Lynk.id, dan email masih memakai nama lama `digitalgo123` sampai akun-akunnya diganti.
 
 Website statis (HTML/CSS/JS biasa, tanpa framework) untuk:
 1. Menampilkan galeri hasil karya mewarnai anak-anak (`index.html`)
@@ -13,8 +16,8 @@ Website statis (HTML/CSS/JS biasa, tanpa framework) untuk:
    pilih repository GitHub yang baru dibuat.
 3. Biarkan setting default (tidak perlu build command, karena ini situs statis biasa),
    klik Deploy.
-4. Di menu Domain settings, ganti subdomain jadi `digitalgo123` supaya alamatnya jadi
-   `digitalgo123.netlify.app`.
+4. Di menu Domain settings, ganti subdomain jadi nama brand baru (misalnya `gencadigital`) supaya alamatnya jadi
+   `gencadigital.netlify.app`.
 5. Buka tab **Forms** di dashboard Netlify -> pastikan form bernama `karya-anak`
    sudah terdeteksi (biasanya otomatis terdeteksi begitu situs pertama kali di-deploy).
 6. Di tab **Forms > Form notifications**, klik "Add notification" -> "Email
