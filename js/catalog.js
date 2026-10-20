@@ -1,5 +1,5 @@
 (function () {
-  const LYNK_URL = "https://lynk.id/digitalgo123";
+  const LYNK_URL = "https://lynk.id/gencadigital";
 
   const bundleGrid = document.getElementById("bundleGrid");
   const seriesGrid = document.getElementById("seriesGrid");
